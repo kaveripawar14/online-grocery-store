@@ -8,20 +8,37 @@
 
     <h1>Online Grocery Store</h1>
 
-    <div class="product">
-        <h2>Apple</h2>
-        <p>Price: ₹120</p>
-        <button onclick="addToCart('Apple')">
-            Add to Cart
-        </button>
+    <div id="cart">
+        🛒 Cart Items: <span id="cart-count">0</span>
+        <br>
+        💰 Total: ₹<span id="cart-total">0</span>
     </div>
 
-    <div class="product">
-        <h2>Milk</h2>
-        <p>Price: ₹60</p>
-        <button onclick="addToCart('Milk')">
-            Add to Cart
-        </button>
+    <div class="products">
+
+        <div class="product">
+            <h2>Apple</h2>
+            <p>Price: ₹120</p>
+            <button onclick="addToCart('Apple', 120)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h2>Milk</h2>
+            <p>Price: ₹60</p>
+            <button onclick="addToCart('Milk', 60)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <div id="cart-section">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
