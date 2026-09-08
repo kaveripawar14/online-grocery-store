@@ -1,28 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Grocery Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Online Grocery Store</h1>
+    <header>
+        <h1>🛒 Online Grocery Store</h1>
+        <p>Fresh groceries delivered to your doorstep</p>
+    </header>
 
-    <div class="product">
-        <h2>Apple</h2>
-        <p>Price: ₹120</p>
-        <button onclick="addToCart('Apple')">
-            Add to Cart
-        </button>
-    </div>
+    <main>
+        <h2>Our Grocery Products</h2>
 
-    <div class="product">
-        <h2>Milk</h2>
-        <p>Price: ₹60</p>
-        <button onclick="addToCart('Milk')">
-            Add to Cart
-        </button>
-    </div>
+        <div class="products">
+
+            <div class="product">
+                <div class="product-image">🍎</div>
+                <h3>Apple</h3>
+                <p>Fresh and juicy apples</p>
+                <h4>₹120 / kg</h4>
+                <button onclick="addToCart('Apple')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">🥛</div>
+                <h3>Milk</h3>
+                <p>Fresh dairy milk</p>
+                <h4>₹60 / litre</h4>
+                <button onclick="addToCart('Milk')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">🍞</div>
+                <h3>Bread</h3>
+                <p>Soft and fresh bread</p>
+                <h4>₹40 / pack</h4>
+                <button onclick="addToCart('Bread')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">🍅</div>
+                <h3>Tomato</h3>
+                <p>Fresh red tomatoes</p>
+                <h4>₹50 / kg</h4>
+                <button onclick="addToCart('Tomato')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <div id="cart-message"></div>
+    </main>
+
+    <footer>
+        <p>© 2026 Online Grocery Store</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

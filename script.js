@@ -1,3 +1,4 @@
 function addToCart(product) {
-    alert(product + " added to cart!");
+    document.getElementById("cart-message").innerText =
+        product + " added to cart successfully!";
 }
