@@ -101,3 +101,68 @@ button:hover {
 .quantity-controls button:hover {
     background-color: #1565c0;
 }
+
+#checkout-button {
+    margin-top: 15px;
+    background-color: #ff9800;
+}
+
+#checkout-button:hover {
+    background-color: #ef6c00;
+}
+
+#order-section {
+    display: none;
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#order-section h2 {
+    color: #2e7d32;
+}
+
+#order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+#order-form label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#order-form input,
+#order-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#order-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+#order-form button {
+    margin-top: 15px;
+    background-color: #4caf50;
+}
+
+#order-confirmation {
+    display: none;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
