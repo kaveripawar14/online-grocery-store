@@ -36,10 +36,52 @@
 
     <div id="cart-section">
         <h2>Shopping Cart</h2>
+
         <div id="cart-items">
             <p>Your cart is empty.</p>
         </div>
+
+        <button id="checkout-button" onclick="showOrderForm()">
+            Proceed to Checkout
+        </button>
     </div>
+
+    <div id="order-section">
+        <h2>Place Your Order</h2>
+
+        <form id="order-form" onsubmit="placeOrder(event)">
+
+            <label for="customer-name">Customer Name</label>
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="address">Delivery Address</label>
+            <textarea
+                id="address"
+                placeholder="Enter your delivery address"
+                required
+            ></textarea>
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+    </div>
+
+    <div id="order-confirmation"></div>
 
     <script src="script.js"></script>
 </body>
