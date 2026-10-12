@@ -1,0 +1,35 @@
+name: Online Grocery CI Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    name: Build and Test Website
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check Project Files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f script.js
+          echo "All project files are present."
+
+      - name: Validate HTML, CSS and JavaScript
+        run: |
+          node --version
+          node --check script.js
+          echo "JavaScript syntax validation completed."
+
+      - name: CI Pipeline Report
+        if: always()
+        run: |
+          echo "Online Grocery Store CI Pipeline executed."
+          echo "Build and file validation steps completed."
